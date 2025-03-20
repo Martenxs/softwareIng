@@ -1,5 +1,5 @@
 package modelo;
 
 public interface Pago {
-    void realizarPago(double monto);
+    String realizarPago(double monto);
 }

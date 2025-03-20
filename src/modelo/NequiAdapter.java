@@ -8,7 +8,8 @@ public class NequiAdapter implements Pago {
     }
 
     @Override
-    public void realizarPago(double monto) {
+    public String realizarPago(double monto) {
         nequi.pagarConNequi(monto);
+        return "Pago realizado con Nequi.";
     }
 }

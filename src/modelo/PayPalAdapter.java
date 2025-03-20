@@ -8,7 +8,8 @@ public class PayPalAdapter implements Pago {
     }
 
     @Override
-    public void realizarPago(double monto) {
+    public String realizarPago(double monto) {
         paypal.hacerPagoPayPal(monto);
+        return "Pago realizado con PayPal.";
     }
 }

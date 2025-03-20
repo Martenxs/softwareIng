@@ -1,7 +1,13 @@
 package modelo;
 
 public class Nequi {
-    public void pagarConNequi(double cantidad) {
-        System.out.println("Pago de $" + cantidad + " realizado con Nequi.");
+    private String correo;
+
+    public Nequi(String correo) {
+        this.correo = correo;
+    }
+
+    public String pagarConNequi(double cantidad) {
+        return "Pago de $" + cantidad + " realizado con Nequi desde el correo: " + correo;
     }
 }

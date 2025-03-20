@@ -166,9 +166,9 @@ public class Main extends Application {
             Pago pago;
 
             if (metodoPago.getValue().equals("Nequi")) {
-                pago = new NequiAdapter(new Nequi());
+                pago = new NequiAdapter(new Nequi("diego@gmail.com"));
             } else {
-                pago = new PayPalAdapter(new PayPal());
+                pago = new PayPalAdapter(new PayPal(1071162531));
             }
 
             pago.realizarPago(monto);
