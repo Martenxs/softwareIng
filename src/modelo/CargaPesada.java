@@ -1,8 +1,9 @@
 package modelo;
 
-public class CargaPesada implements  Mercancia{
-    @Override
-    public String obtenerTipo(){
+// Subclase de Mercancia
+public class CargaPesada implements Mercancia {
+    public String tipo() {
         return "Carga Pesada";
     }
 }
+

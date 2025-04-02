@@ -1,16 +1,12 @@
 package modelo;
 
-public class CarritoBase implements CarritoCompra{
-    private double total;
-    public CarritoBase(double total){
-        this.total = total;
+// Implementación base del Carrito
+public class CarritoBase implements Carrito {
+    public String descripcion() {
+        return "Carrito de compras";
     }
-    @Override
-    public String obtenerDescripcion(){
-        return "Carrito de compra";
-    }
-    @Override
-    public double calcularTotal(){
-        return total;
+
+    public double costo() {
+        return 100.0;  // Precio base
     }
 }

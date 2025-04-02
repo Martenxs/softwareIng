@@ -1,11 +1,12 @@
 package modelo;
 
-public class EnvioInternacional extends  Envio{
-    public EnvioInternacional(Mercancia mercancia){
+// Subclase Envío Internacional
+public class EnvioInternacional extends Envio {
+    public EnvioInternacional(Mercancia mercancia) {
         super(mercancia);
     }
-    @Override
-    public String procesarEnvio(){
-        return "Envio internacional de" + mercancia.obtenerTipo();
+
+    public String enviar() {
+        return "Envío Internacion al de " + mercancia.tipo();
     }
 }

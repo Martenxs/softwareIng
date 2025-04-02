@@ -1,19 +1,18 @@
 package modelo;
 
-public abstract class CarritoDecorator implements CarritoCompra {
-    protected CarritoCompra carrito;
+// Decorador base
+public abstract class CarritoDecorator implements Carrito {
+    protected Carrito carrito;
 
-    public CarritoDecorator(CarritoCompra carrito) {
+    public CarritoDecorator(Carrito carrito) {
         this.carrito = carrito;
     }
 
-    @Override
-    public String obtenerDescripcion() {
-        return carrito.obtenerDescripcion();
+    public String descripcion() {
+        return carrito.descripcion();
     }
 
-    @Override
-    public double calcularTotal() {
-        return carrito.calcularTotal();
+    public double costo() {
+        return carrito.costo();
     }
 }
